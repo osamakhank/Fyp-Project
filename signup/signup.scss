@@ -1,0 +1,25 @@
+page-signup {
+    .header-ios .toolbar-background-ios,
+    .footer-ios .toolbar-background-ios {
+        border-style: none;
+        background-color: #bb3603;
+    }
+    .header-md .toolbar-background-md,
+    .footer-md .toolbar-background-md {
+        border-style: none;
+        background-color: #bb3603;
+    }
+
+    .alert-md .alert-wrapper{
+        background-color: #343434!important;
+        color: white;
+      }
+      .alert-ios .alert-wrapper{
+        background-color: #343434!important;
+        color: white;
+      }
+      .item.item-md .checkbox-md{
+        margin: 0px;
+        margin-right: 5px;
+      }
+}

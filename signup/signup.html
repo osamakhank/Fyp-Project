@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content style="background: #f4f4f4" padding no-bounce>
+    <h1 align="center" style="font-weight: 400;margin-top: 5%;">Sign up</h1>
+    <ion-label style="margin-top: 15%;" stacked>Full Name</ion-label>
+    <ion-item no-lines style="border: 1px solid #e0e0e0;">
+
+        <ion-input type="text" placeholder="John Smith" [(ngModel)]="firstname"></ion-input>
+    </ion-item>
+    <ion-label stacked>Mobile</ion-label>
+    <ion-item no-lines style="border: 1px solid #e0e0e0;">
+
+        <ion-input type="number" placeholder="9945244" [(ngModel)]="mobile"></ion-input>
+    </ion-item>
+    <ion-label stacked>Email Address</ion-label>
+    <ion-item no-lines style="border: 1px solid #e0e0e0;">
+
+        <ion-input type="email" placeholder="example@domain.com"  [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-label stacked>Password</ion-label>
+    <ion-item no-lines style="border: 1px solid #e0e0e0;">
+
+        <ion-input type="password" placeholder="*****"  [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-label stacked>Confirm Password</ion-label>
+    <ion-item no-lines style="border: 1px solid #e0e0e0;">
+
+        <ion-input type="password" placeholder="*****"  [(ngModel)]="confirmpassword"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-item style="background-color:transparent;margin-top:3%;" no-lines>
+        <ion-label>I Accept terms & condition</ion-label>
+        <ion-checkbox [(ngModel)]="rem" ></ion-checkbox>
+      </ion-item>
+
+    <br>
+    <button ion-button style="background: #343434" (click)="signUp()" block>Sign up</button>
+
+    <br> 
+    <ion-label align="center">Already have an account? <a (click)="loginpage()" style="color:black"><b>Sign in</b></a></ion-label>
+</ion-content>
