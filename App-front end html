@@ -1,0 +1,37 @@
+<ion-menu side="right" type="overlay" [content]="navControl">
+
+ 
+
+    <ion-content style="background: rgb(187, 54, 3)">
+        <ion-list style="background: rgb(187, 54, 3)" no-lines>
+            <button (tap)="orderpage()" style="background: rgb(187, 54, 3); color: white;border-bottom: 0.5px solid rgb(187, 54, 3) " ion-item tappable>
+      All Order
+      </button>
+            <button (tap)="myorderpage()" style="background: rgb(187, 54, 3); color: white;border-bottom: 0.5px solid rgb(187, 54, 3) " ion-item tappable>
+My Orders
+        </button>
+            <!-- <button (tap)="paymentpage()" style="background: rgb(187, 54, 3); color: white;border-bottom: 0.5px solid rgb(187, 54, 3) "  ion-item tappable >
+            Payments
+                    </button> -->
+            <button (tap)="changepassword()" style="background: rgb(187, 54, 3); color: white;border-bottom: 0.5px solid rgb(187, 54, 3) " ion-item tappable>
+                        Change Password
+                        </button>
+                        <button (tap)="noti()" style="background: rgb(187, 54, 3); color: white;border-bottom: 0.5px solid rgb(187, 54, 3) " ion-item tappable>
+                                Notifications
+                                </button>
+            <button (tap)="settingpage()" style="background: rgb(187, 54, 3); color: white;border-bottom: 0.5px solid rgb(187, 54, 3) " ion-item tappable>
+          Settings
+          </button>
+
+          
+
+            <button (tap)="logoutpage()" style="background: rgb(187, 54, 3); color: white;border-bottom: 0.5px solid rgb(187, 54, 3) " ion-item tappable>
+            Logout
+            </button>
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #navControl></ion-nav>
